@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vẽ hình chữ nhật</title>
+   
+</head>
+<body>
+ 
+<div class="fa fa-facebook"></div>
+
+    <script>
+
+        let hcn = '<table border-style="1px">';
+        for (let i = 1; i <= 9; i++) {
+            hcn += '<tr>';
+            for (let j = 1; j <= 9; j++) {
+                 //hcn += '<td>' + "<p>&#128512;</p>" + '</td>'
+                hcn += `<td>${i} x ${j} = ${i * j}</td>`
+            }
+            hcn += '</tr>';
+        }
+        
+        if(i>j){
+            hcn += '</table>';
+            document.write(hcn);
+        } else (j>i)
+           document.write('&nbsp'); 
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị bảng số</title>
+</head>
+<body>
+    <script>
+        let giatribentrong_O_trong, i, j;
+        giatribentrong_O_trong = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+        i = j = 1;
+        while (i <= 10) {
+            giatribentrong_O_trong = giatribentrong_O_trong + "<tr>";
+            while (j <= 10) {
+                giatribentrong_O_trong = giatribentrong_O_trong + "<td>" + j + "*" + i + "=" + i * j + "</td>"
+                j++;
+            }
+            giatribentrong_O_trong = giatribentrong_O_trong + "</tr>";
+            j = 1;
+            i++;
+        }
+        giatribentrong_O_trong = giatribentrong_O_trong + "</table>";
+        document.write(giatribentrong_O_trong);
+    </script>
+</body>
+</html>

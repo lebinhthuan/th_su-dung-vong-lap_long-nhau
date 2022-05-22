@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kẻ 1 bảng trống có kích thước M hàng x N cột (Vd: M=10, N= 20</title>
+    
+</head>
+<body>
+    <script>
+        let o_trong, i, j;
+     o_trong = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+        i = j = 1;
+        while (i <= 10) {
+         o_trong = o_trong + "<tr>";
+            while (j <= 20) {
+             o_trong = o_trong + "<td>" + "</td>" // Muốn thêm nội dung thì ghi vào giữa "<td>" và "</td>", cách nhau bởi dấu cộng
+                j++;
+            }
+         o_trong = o_trong + "</tr>";
+            j = 1;
+            i++;
+        }
+     o_trong = o_trong + "</table>";
+        document.write (o_trong);
+    </script>
+</body>
+</html>
